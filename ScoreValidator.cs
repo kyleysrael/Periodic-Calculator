@@ -16,8 +16,8 @@ public static class ScoreValidator
     */
 
     public static string userInput_score = "40"; // TextBox
-    public static string userInput_items = "50"; // TexBox
-    public static string activityType = "LabActItems1"; //Variable of Texbox
+    public static string userInput_items = "100"; // TexBox
+    public static string activityType = "labActItems2"; //Variable of Texbox
 
     public static void Main(string[] args)
     {
@@ -39,7 +39,7 @@ public static class ScoreValidator
                 return "quiz";
             case "laba":
                 return "labAct";
-            case "class":
+            case "clas":
                 return "classAct";
             case "exam":
                 return "exam";
@@ -74,8 +74,9 @@ public static class ScoreValidator
             default:
                 throw new ArgumentException($"Invalid activity type for {activityType}");
         }
-        Console.WriteLine("TEST 1: PASSED"); //PLEASE REMOVE
-        Console.WriteLine($"totalItems: {intTotalItems}\nActivity: {ActivityType(activityType)}\n"); //PLEASE REMOVE
+
+        Console.WriteLine($"totalItems: {intTotalItems}\nActivity: {ActivityType(activityType)}"); //PLEASE REMOVE
+        Console.WriteLine("TEST 1: PASSED\n"); //PLEASE REMOVE
     }
 
     public static void ValidateRange(int intTotalItems, int min, int max)
@@ -102,8 +103,9 @@ public static class ScoreValidator
         {
             throw new ArgumentOutOfRangeException($"The Score cannot be less than zero (0) and cannot exceed total items.");
         }
-        Console.WriteLine("TEST 2: PASSED"); //PLEASE REMOVE
-        Console.WriteLine($"Scores: {intScore}\nActivity: {ActivityType(activityType)}\n"); //PLEASE REMOVE
+
+        Console.WriteLine($"Scores: {intScore}\nActivity: {ActivityType(activityType)}"); //PLEASE REMOVE
+        Console.WriteLine("TEST 2: PASSED\n"); //PLEASE REMOVE
     }
 
     public static int ValidateRange(int score, string activityType)
@@ -111,8 +113,11 @@ public static class ScoreValidator
         string activity = ActivityType(activityType);
         char count = (activity == "exam") ? '\0' : activityType[^1];
 
-        string textBox_Items = $"{activity}Items{count}";
+        string textBox_Items = ($"{activity}Items{count}").Trim();
         string textBoxText = ScoreValidator.userInput_items;  // Change to 'string textBoxText =  (textBox_Items).Text;' to get The total Items Texbox Text
+
+        Console.WriteLine($"{textBox_Items} is Matched to {ScoreValidator.activityType} = {ScoreValidator.activityType.Trim() == textBox_Items.Trim()}");
+
         if (int.TryParse(textBoxText, out int totalItems))
         {
             return totalItems;
