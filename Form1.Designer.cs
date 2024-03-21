@@ -41,11 +41,11 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.examItems = new System.Windows.Forms.TextBox();
+            this.examItems1 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.examScore = new System.Windows.Forms.TextBox();
+            this.examScore1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.classActItems3 = new System.Windows.Forms.TextBox();
             this.classActScore3 = new System.Windows.Forms.TextBox();
@@ -107,11 +107,11 @@
             this.toolStripContainer1.ContentPanel.Controls.Add(this.label11);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.label10);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.label9);
-            this.toolStripContainer1.ContentPanel.Controls.Add(this.examItems);
+            this.toolStripContainer1.ContentPanel.Controls.Add(this.examItems1);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.label8);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.label7);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.label6);
-            this.toolStripContainer1.ContentPanel.Controls.Add(this.examScore);
+            this.toolStripContainer1.ContentPanel.Controls.Add(this.examScore1);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.label5);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.classActItems3);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.classActScore3);
@@ -249,13 +249,13 @@
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // examItems
+            // examItems1
             // 
-            this.examItems.Location = new System.Drawing.Point(325, 279);
-            this.examItems.Multiline = true;
-            this.examItems.Name = "examItems";
-            this.examItems.Size = new System.Drawing.Size(54, 20);
-            this.examItems.TabIndex = 27;
+            this.examItems1.Location = new System.Drawing.Point(325, 279);
+            this.examItems1.Multiline = true;
+            this.examItems1.Name = "examItems1";
+            this.examItems1.Size = new System.Drawing.Size(54, 20);
+            this.examItems1.TabIndex = 27;
             // 
             // label8
             // 
@@ -294,13 +294,13 @@
             this.label6.Text = "Score";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // examScore
+            // examScore1
             // 
-            this.examScore.Location = new System.Drawing.Point(246, 279);
-            this.examScore.Multiline = true;
-            this.examScore.Name = "examScore";
-            this.examScore.Size = new System.Drawing.Size(54, 20);
-            this.examScore.TabIndex = 23;
+            this.examScore1.Location = new System.Drawing.Point(246, 279);
+            this.examScore1.Multiline = true;
+            this.examScore1.Name = "examScore1";
+            this.examScore1.Size = new System.Drawing.Size(54, 20);
+            this.examScore1.TabIndex = 23;
             // 
             // label5
             // 
@@ -583,7 +583,7 @@
         private System.Windows.Forms.TextBox quizScore1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox examScore;
+        private System.Windows.Forms.TextBox examScore1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox classActItems3;
         private System.Windows.Forms.TextBox classActScore3;
@@ -593,7 +593,7 @@
         private System.Windows.Forms.TextBox classActScore1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox examItems;
+        private System.Windows.Forms.TextBox examItems1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
